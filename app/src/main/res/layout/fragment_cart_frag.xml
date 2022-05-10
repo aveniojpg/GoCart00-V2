@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_200">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="380dp"
+                    android:layout_height="1580dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="31dp"
+                    android:elevation="30dp"
+                    app:cardCornerRadius="40dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Carrello"
+                            android:textSize="34dp" />
+
+
+
+                        <TextView
+                            android:id="@+id/cibo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Cibo"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:id="@+id/quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/header1"
+                            android:gravity="center"
+                            android:text="Quantità"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/prezzo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/quantity"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="26dp"
+                            android:text="Prezzo"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/header1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cibo"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Articolo"
+                            android:textSize="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/note1.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/header1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Nota 1.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note1.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 1.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note1.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note1.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 1.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty1.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note1.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty1.1"
+                            android:layout_alignBaseline="@id/note1.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty1.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note1.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/price1.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty1.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price1.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.1"
+                            android:layout_alignBaseline="@id/qty1.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price1.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty1.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note2.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note1.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 2.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note2.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note2.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 2.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note2.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note2.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 2.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty2.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note2.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty2.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty2.1"
+                            android:layout_alignBaseline="@id/note2.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty2.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note2.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price2.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty2.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price2.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price2.1"
+                            android:layout_alignBaseline="@id/qty2.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price2.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty2.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note3.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note2.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 3.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note3.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note3.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 3.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note3.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note3.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 3.2"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty3.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note3.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty3.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty3.1"
+                            android:layout_alignBaseline="@id/note3.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty3.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note3.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price3.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty3.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price3.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price3.1"
+                            android:layout_alignBaseline="@id/qty3.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price3.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty3.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note4.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note3.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 4.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note4.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note4.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 4.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note4.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note4.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 4.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty4.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note4.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty4.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty4.1"
+                            android:layout_alignBaseline="@id/note4.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty4.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note4.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price4.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty4.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price4.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price4.1"
+                            android:layout_alignBaseline="@id/qty4.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price4.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price4.2"
+                            android:layout_alignBaseline="@id/qty4.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note5.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note4.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 5.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note5.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note5.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 5.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note5.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note5.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 5.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty5.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note5.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty5.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty5.1"
+                            android:layout_alignBaseline="@id/note5.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty5.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note5.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price5.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty5.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price5.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price2.1"
+                            android:layout_alignBaseline="@id/qty5.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price5.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty5.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note6.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note5.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 6.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note6.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note6.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 6.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note6.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note6.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 6.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty6.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note6.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty6.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty6.1"
+                            android:layout_alignBaseline="@id/note6.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty6.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note6.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price6.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty6.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price6.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price6.1"
+                            android:layout_alignBaseline="@id/qty6.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price6.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty6.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note7.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note6.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 7.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note7.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note7.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 7.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note7.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note7.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 7.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty7.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note7.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty7.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty7.1"
+                            android:layout_alignBaseline="@id/note7.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty7.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note7.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price7.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty7.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price7.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price2.1"
+                            android:layout_alignBaseline="@id/qty7.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price7.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty7.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note8.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note7.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 8.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note8.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note8.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 8.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note8.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note8.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 8.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty8.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note8.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty8.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty8.1"
+                            android:layout_alignBaseline="@id/note8.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty8.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note8.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price8.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty8.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price8.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price2.1"
+                            android:layout_alignBaseline="@id/qty8.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price8.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty8.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+                        //layout start
+
+                        <TextView
+
+                            android:id="@+id/note9.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note8.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 9.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note9.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note9.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 9.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note9.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note9.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 9.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty9.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note9.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty9.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty9.1"
+                            android:layout_alignBaseline="@id/note9.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty9.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note9.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price9.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty9.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price9.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price9.1"
+                            android:layout_alignBaseline="@id/qty9.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price9.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price9.2"
+                            android:layout_alignBaseline="@id/qty9.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        //layout end
+
+
+                        <TextView
+                            android:id="@+id/header3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note9.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Casa"
+                            android:textSize="25sp" />
+
+
+                        <TextView
+                            android:id="@+id/header4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/header3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Articolo"
+                            android:textSize="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/quantity2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/header4"
+                            android:gravity="center"
+                            android:text="Quantità"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/prezzo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/quantity2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="26dp"
+                            android:text="Prezzo"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/note10.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/header4"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Nota 10.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note10.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note10.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 10.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note10.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note10.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 10.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty10.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note10.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty10.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty1.1"
+                            android:layout_alignBaseline="@id/note10.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty10.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note10.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/price10.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty10.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price10.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.1"
+                            android:layout_alignBaseline="@id/qty10.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price10.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price1.2"
+                            android:layout_alignBaseline="@id/qty10.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+
+                            android:id="@+id/note11.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note10.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="14dp"
+                            android:text="Nota 11.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note11.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note11.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 11.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note11.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note11.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 11.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty11.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note11.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty11.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty11.1"
+                            android:layout_alignBaseline="@id/note11.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty11.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note11.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price11.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty11.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price11.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price11.1"
+                            android:layout_alignBaseline="@id/qty11.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price11.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price11.2"
+                            android:layout_alignBaseline="@id/qty11.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+
+                            android:id="@+id/note12.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note11.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 12.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note12.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note12.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 12.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note12.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note12.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 12.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty12.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note12.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty12.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty12.1"
+                            android:layout_alignBaseline="@id/note12.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty12.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note12.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price12.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty12.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price12.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price12.1"
+                            android:layout_alignBaseline="@id/qty12.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price12.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price12.2"
+                            android:layout_alignBaseline="@id/qty12.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+
+                            android:id="@+id/note13.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note12.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Nota 13.1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note13.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note13.1"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 13.2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/note13.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note13.2"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="4dp"
+                            android:text="Nota 13.3"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/qty13.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/quantity"
+                            android:layout_alignBaseline="@id/note13.1"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty13.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qty13.1"
+                            android:layout_alignBaseline="@id/note13.2"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/qty13.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/note13.3"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/price13.1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prezzo"
+                            android:layout_alignBaseline="@id/qty13.1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price13.2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price13.1"
+                            android:layout_alignBaseline="@id/qty13.2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/price13.3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/price13.2"
+                            android:layout_alignBaseline="@id/qty13.3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="50dp"
+                            android:text="0"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/finalpricehader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/note13.3"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="26dp"
+                            android:text="Costo totale:"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="€"
+                            android:layout_marginLeft="26dp"
+                            android:textSize="30dp"
+                            android:layout_below="@id/finalpricehader"/>
+
+                        <TextView
+                            android:id="@+id/save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/finalpricehader"
+                            android:layout_toRightOf="@id/symbol"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:layout_marginLeft="20sp"
+
+                            />
+
+
+                        <Button
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="refresh"
+                            android:onClick="getqty1"
+                            android:layout_below="@id/finalpricehader"
+
+                            android:layout_toRightOf="@id/save"
+
+
+                            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/round_button"
+                            android:text="salva la spesa" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/list_menu"
+        android:title="GoCart"
+        android:icon="@drawable/ic_list"
+        android:theme="@style/Menu"
+        />
+
+
+    <item
+        android:id="@+id/profile_menu"
+        android:title="Profilo"
+        android:icon="@drawable/ic_profile"
+        android:theme="@style/Menu"
+        />
+
+
+
+</menu>

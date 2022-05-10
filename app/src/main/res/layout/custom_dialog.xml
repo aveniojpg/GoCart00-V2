@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="30dp"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/receiptname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/save"
+                android:layout_marginLeft="16dp"
+                android:hint="Inserisci il nome della spesa"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Salva il nome delle spesa:"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/goback"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="76dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/mint"
+                android:src="@drawable/ic_return" />
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/addreceipt"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/mint"
+                android:src="@drawable/ic_add" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

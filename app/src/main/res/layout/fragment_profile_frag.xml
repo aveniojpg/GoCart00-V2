@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".profile_frag"
+    android:background="@color/purple_200"
+    >
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="380dp"
+                    android:layout_height="600dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="31dp"
+                    android:elevation="30dp"
+                    app:cardCornerRadius="40dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/pfp"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_marginLeft="26dp"
+                            android:layout_marginTop="31dp"
+                            android:elevation="40dp"
+                            app:cardCornerRadius="40dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/gocartbanner" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <TextView
+                            android:id="@+id/hi"
+                            android:layout_width="128dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="28dp"
+                            android:layout_toRightOf="@id/pfp"
+                            android:text="Ciao!"
+                            android:textSize="28dp" />
+
+                        <TextView
+                            android:id="@+id/user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/hi"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/pfp"
+                            android:text="Nome"
+                            android:textSize="28dp"
+
+                            />
+
+
+                        <EditText
+                            android:id="@+id/input"
+                            android:layout_width="900dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginRight="26dp"
+                            android:layout_toRightOf="@id/pfp"
+                            android:hint="Come ti chiami?"
+                            android:textAlignment="center"
+                            android:textSize="16dp" />
+
+
+                        <Button
+                            android:id="@+id/namebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/input"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/pfp"
+                            android:background="@drawable/round_button"
+                            android:onClick="NameUpdate"
+                            android:text="aggiungi" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="322dp"
+                            android:layout_height="80dp"
+                            android:layout_below="@id/pfp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="26dp"
+                            android:elevation="40dp"
+                            app:cardCornerRadius="15dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <Switch
+                                    android:id="@+id/switch1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginRight="10dp"/>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/pfp"
+                                android:layout_marginLeft="26dp"
+                                android:layout_marginTop="15dp"
+                                android:text="Modalità notte"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text1"
+                                android:layout_marginLeft="26sp"
+                                android:layout_marginTop="40dp"
+                                android:text="Imposta il tema notturno."
+                                android:textSize="12sp"/>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>
+
